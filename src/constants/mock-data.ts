@@ -1,29 +1,60 @@
-import { Subject } from "../types";
+// Define simplified types for the mock data
+export type Teacher = {
+    id: number;
+    name: string;
+};
 
-// Mock data for three university courses
-export const MOCK_SUBJECTS: Subject[] = [
+export type SimpleSubject = {
+    id: number;
+    name: string;
+    code: string;
+};
+
+// Mock data for teachers
+export const MOCK_TEACHERS: Teacher[] = [
     {
         id: 1,
-        code: "CS101",
-        name: "Introduction to Computer Science",
-        department: "CS",
-        description: "A foundational course covering basic concepts in computer science, including algorithms, data structures, and programming principles.",
-        createdAt: new Date().toISOString(),
+        name: "Dr. John Smith"
     },
     {
         id: 2,
-        code: "MATH201",
-        name: "Calculus II",
-        department: "Maths",
-        description: "Advanced calculus topics including integration techniques, series, and multivariable calculus applications.",
-        createdAt: new Date().toISOString(),
+        name: "Prof. Sarah Johnson"
     },
     {
         id: 3,
-        code: "ENG105",
+        name: "Dr. Michael Chen"
+    },
+    {
+        id: 4,
+        name: "Prof. Emily Rodriguez"
+    }
+];
+
+// Mock data for subjects
+export const MOCK_SUBJECTS: SimpleSubject[] = [
+    {
+        id: 1,
+        name: "Introduction to Computer Science",
+        code: "INTCS"
+    },
+    {
+        id: 2,
+        name: "Calculus II",
+        code: "CALC2"
+    },
+    {
+        id: 3,
         name: "Academic Writing",
-        department: "English",
-        description: "Develops critical thinking and writing skills for academic contexts, focusing on research methods and essay composition.",
-        createdAt: new Date().toISOString(),
+        code: "ACWRT"
+    },
+    {
+        id: 4,
+        name: "Physics Fundamentals",
+        code: "PHYFD"
+    },
+    {
+        id: 5,
+        name: "Data Structures and Algorithms",
+        code: "DSA"
     }
 ];
