@@ -73,7 +73,7 @@ const Create = () => {
     const subjects = subjectsQuery?.data?.data || [];
     const subjectsLoading = subjectsQuery.isLoading;
 
-    const teachers = teachersQuery?.data?.data || [];
+    const teachers = teachersQuery?.data? || [];
     const teachersLoading = teachersQuery.isLoading;
 
     const bannerPublicId = form.watch('bannerCldPubId')
