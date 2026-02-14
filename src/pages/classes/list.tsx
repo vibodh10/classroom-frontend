@@ -24,7 +24,7 @@ import { Subject, User } from "@/types";
 type ClassListItem = {
     id: number;
     name: string;
-    status: "active" | "inactive";
+    status: "Active" | "Inactive";
     bannerUrl?: string;
     subject?: {
         name: string;
