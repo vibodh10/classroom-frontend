@@ -79,8 +79,8 @@ const ClassesList = () => {
                 size: 140,
                 header: () => <p className="column-title">Status</p>,
                 cell: ({ getValue }) => {
-                    const status = getValue<"active" | "inactive">();
-                    const variant = status === "active" ? "default" : "secondary";
+                    const status = getValue<"Active" | "Inactive">();
+                    const variant = status === "Active" ? "default" : "secondary";
 
                     return <Badge variant={variant}>{status}</Badge>;
                 },
